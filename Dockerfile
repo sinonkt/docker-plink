@@ -8,7 +8,7 @@ FROM ubuntu:16.04
 # Environment variables
 # 150314 == plink 1.9 beta 3
 # 180612 == plink 1.9 beta 6.2
-ENV PLINK_VERSION       180612
+ENV PLINK_VERSION       180913
 ENV PLINK_HOME          /usr/local/plink
 ENV PATH                $PLINK_HOME:$PATH
 
