@@ -15,7 +15,7 @@ ENV PATH                $PLINK_HOME:$PATH
 
 RUN apt-get update && \
     apt-get install -y unzip wget && \
-    wget https://www.cog-genomics.org/static/bin/plink$PLINK_VERSION/plink_linux_x86_64.zip && \
+    wget https://www.cog-genomics.org/static/bin/plink${PLINK_VERSION}/plink_linux_x86_64.zip && \
     unzip plink_linux_x86_64.zip -d $PLINK_HOME && \
     rm plink_linux_x86_64.zip && \
     DEBIAN_FRONTEND=noninteractive apt-get autoremove -y unzip wget && \
